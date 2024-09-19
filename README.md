@@ -1,1 +1,1 @@
-# Xiegu-x6200-Research
+# Xiegu-X6200-Research
