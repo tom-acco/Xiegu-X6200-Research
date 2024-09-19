@@ -17,3 +17,6 @@
 [Display Unit PCB](./Imagery/Display%20Unit%20Board/)
 
 [Misc](./Imagery/Misc/)
+
+## Everything Else
+[Exploration Notes](./notes.md)
