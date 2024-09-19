@@ -1,6 +1,7 @@
 # Root Account
 ## Firmware Version 1.0.1
 User: root
+
 Pass: 123
 
 ```bash
