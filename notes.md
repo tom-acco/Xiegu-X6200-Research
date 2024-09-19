@@ -21,7 +21,6 @@ Doesn't seem to work. Errors when bringing up the connection.
 nmcli con add type wifi ifname wlan0 mode ap con-name X6200-AP ssid X6200 autoconnect false
 nmcli con modify X6200-AP wifi.band bg
 nmcli con modify X6200-AP wifi.channel 3
-nmcli con modify X6200-AP wifi.cloned-mac-address 00:12:34:56:78:9a
 nmcli con modify X6200-AP wifi-sec.key-mgmt wpa-psk
 nmcli con modify X6200-AP wifi-sec.proto rsn
 nmcli con modify X6200-AP wifi-sec.group ccmp
