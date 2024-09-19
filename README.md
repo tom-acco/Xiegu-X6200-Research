@@ -11,10 +11,9 @@
 ## Get Root
 [Basic Guide](./Get%20Rooted/README.md)
 
-## High Resolution Interal Images
+## Imagery
 [Base Unit PCB](./Imagery/Base%20Unit%20Board/)
 
 [Display Unit PCB](./Imagery/Display%20Unit%20Board/)
 
 [Misc](./Imagery/Misc/)
-
