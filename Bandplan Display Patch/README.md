@@ -351,15 +351,23 @@ ssh <your-x6200> "cp /usr/app_qt/x6200_ui_v100.bak_original /usr/app_qt/x6200_ui
 
 ## Ideas for follow-up work
 
-- Proper CW/data/phone sub-segmentation per band (matching the IARU Region 1 recommended
-  band plan colors, e.g. light blue = CW, yellow = phone, green = data, red = beacons) instead
-  of one flat "in-band" color — the 4-list structure already supports this, it would just need
-  the remaining 3 rows re-populated instead of hidden, plus a consistent color convention
-  across bands.
+- ~~Proper CW/data/phone sub-segmentation per band (matching the IARU Region 1 recommended band
+  plan colors, e.g. light blue = CW, yellow = phone, green = data, red = beacons) instead of one
+  flat "in-band" color — the 4-list structure already supports this, it would just need the
+  remaining 3 rows re-populated instead of hidden, plus a consistent color convention across
+  bands.~~ **Done** — see the [Bandplan Subdivision Patch](../Bandplan%20Subdivision%20Patch/README.md)
+  in this repo for a full per-band CW/DATA/BAKEN/Voice breakdown built on top of this patch's
+  groundwork (same NOP + color-table technique, taken further). It's a drop-in replacement for
+  this script, not an addition — apply one or the other, not both. That writeup also covers two
+  complications this one didn't run into: literals shared between multiple region-map entries,
+  and boundaries computed at runtime via short `add`/`sub` immediate chains rather than loaded
+  from the literal pool.
 - An external config mechanism (the unused `bands-cfg` setting hints the vendor may have
   intended something like this for a related product) so this doesn't require a fresh binary
-  patch per person/country.
+  patch per person/country. Still open — now more valuable given the Subdivision Patch's larger
+  number of country-specific edge choices.
 - A cleaner reverse-engineering pass with Ghidra instead of `radare2`'s built-in
   decompiler — several of the harder bands (6 m in particular) build frequency literals via
   chains of register arithmetic that a real decompiler would likely resolve automatically
-  instead of requiring manual/simulated tracing.
+  instead of requiring manual/simulated tracing. Still open; the Subdivision Patch worked around
+  this with a bespoke ESIL-emulation register tracer instead.
