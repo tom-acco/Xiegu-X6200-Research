@@ -1,6 +1,6 @@
 # Xiegu X6200: CW / DATA / BAKEN / Voice sub-band breakdown in the band-scope bar
 
-## TL;DR
+## Overview
 
 The [Bandplan Display Patch](../Bandplan%20Display%20Patch/README.md) one directory up replaces
 the stock US-license-class overlay with a single flat "in-band" color per band. That's correct,

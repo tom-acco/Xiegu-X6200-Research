@@ -1,6 +1,6 @@
 # Xiegu X6200: Replacing the US-license-class band-scope overlay with a CEPT/IARU-Region-1 band-edge display
 
-## TL;DR
+## Overview
 
 The colored bar drawn above the waterfall/spectrum view (the "amateur band operation & mode
 allocation diagram" from the official manual) encodes **US FCC license class privileges**
