@@ -36,5 +36,9 @@
 ## Bandplan Display Patch
 [CEPT/IARU-R1 band-edge overlay instead of the US license-class display](./Bandplan%20Display%20Patch/README.md)
 
+Follow-up: [Bandplan Subdivision Patch](./Bandplan%20Subdivision%20Patch/README.md) — builds on
+the patch above to show a full per-band CW/DATA/BAKEN/Voice breakdown instead of one flat
+"in-band" color.
+
 ## Everything Else
 [Exploration Notes](./notes.md)

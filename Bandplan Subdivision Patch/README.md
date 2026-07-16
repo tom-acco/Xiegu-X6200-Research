@@ -157,7 +157,7 @@ than added detail, so every band that gets a full breakdown here has it entirely
 
 Full address-level detail — literal-pool addresses, which fields share a literal, exact chain
 immediates and how each was derived — is documented inline in
-[`apply_bandplan_patch.py`](./apply_bandplan_patch.py), organized by band in the same order as the
+[`apply_bandplan_subdivision_patch.py`](./apply_bandplan_subdivision_patch.py), organized by band in the same order as the
 results table below. The comments there are the authoritative reference if you're adapting this
 to a different national band plan or verifying the analysis yourself.
 
@@ -212,7 +212,7 @@ effort:
    than a misleadingly specific mode color.
 
 Every patched entry, and which of the above techniques applies, is documented per instruction in
-[`apply_bandplan_patch.py`](./apply_bandplan_patch.py).
+[`apply_bandplan_subdivision_patch.py`](./apply_bandplan_subdivision_patch.py).
 
 ### Results
 
@@ -279,7 +279,7 @@ ssh <your-x6200> "md5sum /usr/app_qt/x6200_ui_v100"
 # must print: a08ab13189bececa9995d3d19bc14c94
 ```
 
-[`apply_bandplan_patch.py`](./apply_bandplan_patch.py) checks this itself and refuses to write
+[`apply_bandplan_subdivision_patch.py`](./apply_bandplan_subdivision_patch.py) checks this itself and refuses to write
 anything if the hash differs.
 
 ### Steps
@@ -294,7 +294,7 @@ scp <your-x6200>:/usr/app_qt/x6200_ui_v100 ./original
 #    edit the corresponding PATCHES entries first, see the module
 #    docstring at the top of the script for guidance on which patches are
 #    trivial to retarget vs. which need the chain-tracing methodology above)
-python3 apply_bandplan_patch.py ./original ./patched
+python3 apply_bandplan_subdivision_patch.py ./original ./patched
 
 # 3. Back up the original ON the device (do not skip this)
 ssh <your-x6200> "cp /usr/app_qt/x6200_ui_v100 /usr/app_qt/x6200_ui_v100.bak_original"

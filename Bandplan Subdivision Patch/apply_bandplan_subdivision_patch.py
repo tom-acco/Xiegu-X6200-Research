@@ -31,10 +31,10 @@ isTxEnable()/isHamBand() or the fullband-tx setting in
 /etc/xgradio/xgradio.conf -- TX behavior is unaffected.
 
 Usage:
-    python3 apply_bandplan_patch.py <input_file> <output_file>
+    python3 apply_bandplan_subdivision_patch.py <input_file> <output_file>
 
 Example:
-    python3 apply_bandplan_patch.py x6200_ui_v100 x6200_ui_v100.patched
+    python3 apply_bandplan_subdivision_patch.py x6200_ui_v100 x6200_ui_v100.patched
 
 The script verifies the input file's MD5 before writing anything, and
 verifies every patch's expected "old" value at its offset before changing
