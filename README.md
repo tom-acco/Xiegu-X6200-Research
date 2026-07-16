@@ -40,10 +40,5 @@ Follow-up: [Bandplan Subdivision Patch](./Bandplan%20Subdivision%20Patch/README.
 the patch above to show a full per-band CW/DATA/BAKEN/Voice breakdown instead of one flat
 "in-band" color.
 
-## Claude Code Workflow
-[Using Claude Code for hands-on radio hacking](./Claude%20Code%20Workflow/README.md) — not a
-finding, but the working method behind the patches above: how this repo's reverse-engineering
-and patch work actually gets done, session to session, using Claude Code.
-
 ## Everything Else
 [Exploration Notes](./notes.md)
