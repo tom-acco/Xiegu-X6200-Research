@@ -355,8 +355,8 @@ ssh <your-x6200> "cp /usr/app_qt/x6200_ui_v100.bak_original /usr/app_qt/x6200_ui
   plan colors, e.g. light blue = CW, yellow = phone, green = data, red = beacons) instead of one
   flat "in-band" color — the 4-list structure already supports this, it would just need the
   remaining 3 rows re-populated instead of hidden, plus a consistent color convention across
-  bands.~~ **Done** — see the [Bandplan Subdivision Patch](../Bandplan%20Subdivision%20Patch/README.md)
-  in this repo for a full per-band CW/DATA/BAKEN/Voice breakdown built on top of this patch's
+  bands.~~ **Done** — see [`SUBDIVISION.md`](./SUBDIVISION.md)
+  in this folder for a full per-band CW/DATA/BAKEN/Voice breakdown built on top of this patch's
   groundwork (same NOP + color-table technique, taken further). It's a drop-in replacement for
   this script, not an addition — apply one or the other, not both. That writeup also covers two
   complications this one didn't run into: literals shared between multiple region-map entries,

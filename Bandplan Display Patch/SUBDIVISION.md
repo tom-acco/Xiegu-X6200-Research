@@ -2,7 +2,7 @@
 
 ## Overview
 
-The [Bandplan Display Patch](../Bandplan%20Display%20Patch/README.md) one directory up replaces
+The [Bandplan Display Patch](./README.md) in this same folder replaces
 the stock US-license-class overlay with a single flat "in-band" color per band. That's correct,
 but it throws away information every national IARU Region 1 band plan actually carries: which
 part of the band is CW, which is data, which is phone, and where the beacon sub-bands sit.
@@ -43,7 +43,7 @@ both grabbed as pixel-exact on-device screenshots, same technique as the base pa
 
 | Before | After |
 |---|---|
-| ![Before: stock US-license-class overlay](./before.png) | ![After: full CW/DATA/BAKEN/Voice breakdown](./after.png) |
+| ![Before: stock US-license-class overlay](./subdivision-before.png) | ![After: full CW/DATA/BAKEN/Voice breakdown](./subdivision-after.png) |
 
 ---
 
